@@ -1,6 +1,5 @@
 var num = 33721;
-var res = num % 10;
-num = Math.floor(num / 10);
+var res = 1;
 
 while (num > 0) {
 	res *= num % 10;
