@@ -1,0 +1,19 @@
+body {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.myClass {
+	display: block;	
+	margin: 10px;
+}
+
+.bold {
+	font-weight: 700;
+	margin: 10px;
+}
+
+.italic {
+	font-style: italic;
+	margin: 10px;
+}
