@@ -32,6 +32,8 @@ open.addEventListener('click', () => {
 	mainList.budjet = money;
 
 	name_value.textContent = prompt("Название вашего магазина?", "").toUpperCase();
+
+	discount_value.textContent = money * .8;
 });
 
 goods_btn.addEventListener('click', () => {
