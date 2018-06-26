@@ -1,0 +1,18 @@
+.container {
+	margin: 0 auto;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	border: 3px solid #1d334a;
+	margin: 50px;
+	text-align: center;
+	position: relative;
+}
+
+.btn {
+	font-size: 1.2em;
+	border-radius: 3px;
+	padding: 10px;
+}
