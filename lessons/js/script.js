@@ -21,7 +21,7 @@ var mainList = {
 	shopItems: [],
 	chooseGoods: function chooseGoods() {
 		for (let i = 0; i < 5; ++i) {
-			let tovar = prompt("Какой тип товаров будем продавать? " + i, "");	
+			let tovar = prompt(`Какой тип товаров будем продавать? ${i}`, "");	
 
 			if ( typeof(tovar) === "string" && typeof(tovar) != null && tovar != "" && tovar.length < 50 ) {
 				console.log("All right");
@@ -46,7 +46,7 @@ var mainList = {
 	},
 
 	dayBudjet: function dayBudjet() {
-		alert("Budjet: " + mainList.budjet / 30);
+		alert(`Budjet: ${mainList.budjet / 30}`);
 	},
 
 	makeDiscount: function makeDiscount(discount) {
@@ -58,7 +58,7 @@ var mainList = {
 
 	hireEmployers: function hireEmployers() {
 		for (let i = 0; i < 4; ++i) {
-			name = prompt("Имя сотрудника " + i, "");
+			name = prompt(`Имя сотрудника ${i}`, "");
 			mainList.employers[i] = name;
 		}
 	},
@@ -85,7 +85,7 @@ mainList.shopItems.forEach( function(element, index) {
 
 console.log("Наш магазин включает в себя:");
 for (let key in mainList) {
-	console.log("Свойство " + key + " имеет значение " + mainList[key]);
+	console.log(`Свойство ${key} имеет значение ${mainList[key]}`);
 }
 
 console.log(mainList);
