@@ -164,4 +164,23 @@ window.addEventListener("DOMContentLoaded", () => {
 		document.body.style.overflow = '';
 	});
 
+
+	// Form
+
+	let message = new Object();
+	message.loading = "Загрузка...";
+	message.success = "Спасибо! Скоро мы свяжемся с Вами";
+	message.failure = "Что-то пошло не так...";
+
+	let form = document.getElementsByClassName('main-form')[0],
+		input = form.getElementsByTagName('input'),
+		statusMessage = document.createElement('div');
+
+	statusMessage.classList.add('status');
+
+	form.addEventListener('sumbit', function (event) {
+		event.preventDefault();
+		form.appendChild(statusMessage);
+	});
+
 });
